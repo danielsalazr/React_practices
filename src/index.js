@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import './global.css';
 //import Badge from './components/Badge';
-import BadgeNew from './components/pages/BadgeNew';
+//import BadgeNew from './pages/BadgeNew';
+import Badges from './pages/Badges';
 
 //import './global.css';
 //import App from './components/App';
@@ -34,10 +35,4 @@ const element = React.createElement(
 
 const container = document.getElementById('app');
 
-ReactDOM.render( <BadgeNew 
-firstName="jerson" 
-lastName="Vasquez"
-avatarUrl ="https://www.gravatar.com/avatar?d=identicon"
-jobTitle = "Senor de senoress"
-twitter = "danielsalaz"
-/> , container);
+ReactDOM.render( <Badges /> , container);
