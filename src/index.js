@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import './global.css'
-import Badge from './components/Badge';
+import './global.css';
+//import Badge from './components/Badge';
+import BadgeNew from './components/pages/BadgeNew';
 
 //import './global.css';
 //import App from './components/App';
@@ -33,4 +34,10 @@ const element = React.createElement(
 
 const container = document.getElementById('app');
 
-ReactDOM.render( <Badge /> , container);
+ReactDOM.render( <BadgeNew 
+firstName="jerson" 
+lastName="Vasquez"
+avatarUrl ="https://www.gravatar.com/avatar?d=identicon"
+jobTitle = "Senor de senoress"
+twitter = "danielsalaz"
+/> , container);
