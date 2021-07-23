@@ -4,12 +4,16 @@ import header from '../images/platziconf.svg';
 
 import Badge from '../components/Badge';
 import BadgeForm from '../components/BadgeForm';
+import pagesLoading from '../components/PageLoading'
 import api from '../api';
 
 
 class BadgeNew extends React.Component {
     state = {
+        
         // Para evotar los anuncios de warning es recomendable inivcializar los valores del formulario
+        loading : false,
+        error : null,
         form: {
             firstName: '',
             lastName: '',
@@ -56,6 +60,9 @@ class BadgeNew extends React.Component {
     }
 
     render() {
+        if (this.state.loading) {
+            return <pagesLoading />
+        }
         return (
             <React.Fragment>
                 <div className="BadgeNew__hero">
