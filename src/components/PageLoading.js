@@ -6,10 +6,10 @@ function PageLoading () {
     
     return (
         <React.Fragment>  
-                <div className="PageLoading" align="center">
-                    <Loader />
-                </div>
-                </React.Fragment> 
+            <div className="PageLoading" align="center">
+                <Loader />
+            </div>
+        </React.Fragment> 
     )
 }
 

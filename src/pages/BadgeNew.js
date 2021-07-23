@@ -4,7 +4,7 @@ import header from '../images/platziconf.svg';
 
 import Badge from '../components/Badge';
 import BadgeForm from '../components/BadgeForm';
-import pagesLoading from '../components/PageLoading'
+import PageLoading  from '../components/PageLoading'
 import api from '../api';
 
 
@@ -61,7 +61,7 @@ class BadgeNew extends React.Component {
 
     render() {
         if (this.state.loading) {
-            return <pagesLoading />
+            return <PageLoading />
         }
         return (
             <React.Fragment>
