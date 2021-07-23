@@ -30,10 +30,11 @@ const api = {
     },
     create(badge) {
       // throw new Error('500: Server error');
-      return callApi(`/badges`, {
-        method: 'POST',
-        body: JSON.stringify(badge),
-      });
+      throw new Error('500: Server Error'); // inducing error
+      // return callApi(`/badges`, {
+      //   method: 'POST',
+      //   body: JSON.stringify(badge),
+      // });
     },
     read(badgeId) {
       return callApi(`/badges/${badgeId}`);
